@@ -42,7 +42,7 @@ class Account:
             key_size=2048
         )
         self._private_key = private_key
-        # Assigning the public key from the pair
+        # Assigning the public key from the pair [and plan to delete]
         public_key = private_key.public_key()
         self._public_key = public_key
         # Converting them to pem format strings and store in the class attributes already defined

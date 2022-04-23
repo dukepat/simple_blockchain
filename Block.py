@@ -58,7 +58,7 @@ class Block:
         block_hash = hashlib.sha256(encoded_hash_string).hexdigest()
         return block_hash
 
-    # Increasing nonce until block hash is below the hash target
+    # Increasing nonce until block hash is below the hash target. This is meeting the condition for the target
     # Ignoring for genesis block (index 0) since that block is hard-coded
     def mine_block(self):
         if (self._index != 0):
